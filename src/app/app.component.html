@@ -1,10 +1,10 @@
-<h1>Hola mundo</h1>
+<h1>Hola mundo NIL **</h1>
 <p>Title: {{title}}</p>
 <div>
   <app-typescript
     [titulo]="title"
-    (tituloModificado)="getTituloModificado($event)"
-    (retornaNumero)="getRetonaNumero($event)">
+    (tituloModificado)="getTituloModificado($any($event))"
+    (retornaNumero)="getRetonaNumero($any($event))">
   </app-typescript>
 </div>
 
@@ -12,8 +12,8 @@
 <div>
   <app-typescript
     [titulo]="title"
-    (tituloModificado)="getTituloModificado($event)"
-    (retornaNumero)="getRetonaNumero($event)">
+    (tituloModificado)="getTituloModificado($any($event))"
+    (retornaNumero)="getRetonaNumero($any($event))">
   </app-typescript>
 </div>
 
